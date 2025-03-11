@@ -92,7 +92,7 @@ To install `Julia` on Linux use the command:
 ```
 $ curl -fsSL https://install.julialang.org | sh -s -- --yes
 ```  
-where the `--yes` flag installs `Julia` in non-interactive mode. 
+where the `--yes` flag installs `Julia` in non-interactive mode.   
 As indicated by the installer, you might have to set the `Julia` PATH in the correct root files to run `Julia` from any location:  
 ```
 $ . /root/.bashrc
@@ -120,3 +120,25 @@ For further information, check out the `Julia` [documentation](https://docs.juli
 
 ## Compile C++ in AlmaLinux 9
 
+If necessary first install the `sudo` command through:  
+```
+dnf install sudo
+```  
+Check if the C++ compiler `g++` is installed:   
+```
+$ g++ --version
+```  
+If the `g++` command is not found, procede to explicitly installing it:  
+```
+$ sudo dnf install g++
+```  
+and check the version again.  
+
+With this compiler, we can now compile C++ scripts:  
+```
+$ g++ my_script.cpp -o my_programme
+```  
+This line of code compiles the C++ script my_script.cpp and creates an executable programme named my_programme. The programme can then be executed as:  
+```
+$ ./my_programme
+```
