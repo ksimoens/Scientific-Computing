@@ -26,7 +26,9 @@ Docker version XX.X.X, build XXXXXXX
 3. Finally, add your account to the `docker` group in order to run Docker without `sudo` priviliges:  
 ```
 $ sudo usermod -aG docker <your_username>
-```
+```  
+  
+Based on [SevenBridges](https://docs.sevenbridges.com/docs/install-docker-on-linux).
 
 ## Load the AlmaLinux 9 container in Docker  
 
@@ -59,7 +61,9 @@ to list the available containers, which should return:
 NAME="AlmaLinux"    
 VERSION="9.5 (Teal Serval)"  
 ...
-```
+```  
+  
+Based on the [Manual](https://alicedoimo.github.io/docker-almalinux-guide/) by Alice Doimo.
 
 ## Use the AlmaLinux 9 container in Docker  
 
@@ -83,7 +87,9 @@ To mount a volume the flag `-v` is added to the `run` command:
 ```
 $ docker run -it --name "my_container_name" -v "full_path_on_host_machine:target_folder_in_container" almalinux:9
 ```  
-Now files inside the "full_path_on_host_machine" directory are visible in the "target_folder_in_container". You can use your favourite editor on your host machine to edit files in the container.
+Now files inside the "full_path_on_host_machine" directory are visible in the "target_folder_in_container". You can use your favourite editor on your host machine to edit files in the container.  
+  
+Based on [Diona Rodrigues](https://dionarodrigues.dev/blog/how-to-use-docker-images-containers-volumes-and-bind-mounts).
 
 ## Install Julia in AlmaLinux 9
 
@@ -122,7 +128,7 @@ For further information, check out the `Julia` [documentation](https://docs.juli
 
 If necessary first install the `sudo` command through:  
 ```
-dnf install sudo
+$ dnf install sudo
 ```  
 Check if the C++ compiler `g++` is installed:   
 ```
@@ -141,4 +147,6 @@ $ g++ my_script.cpp -o my_programme
 This line of code compiles the C++ script my_script.cpp and creates an executable programme named my_programme. The programme can then be executed as:  
 ```
 $ ./my_programme
-```
+```  
+  
+Based on [OrcaCore](https://orcacore.com/install-gcc-compiler-almalinux-9/) and [java frm](https://www.youtube.com/watch?v=m05leBnnVZU).
