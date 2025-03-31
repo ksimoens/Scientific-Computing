@@ -38,7 +38,7 @@ In order to let the compiler know about the existence of GSL, the `-lgsl` flag h
 
 ## Run the script
 
-The code can be found on GitHub under **Task_003_data_storage**.  
+The code can be found on [GitHub](https://github.com/ksimoens/Scientific-Computing/tree/master/Task003_data_storage) under **Task_003_data_storage**.  
 
 In order to run the vector-sum script with its input and output, execute the bash script `run.sh`.  
 You might have to make it executable via
