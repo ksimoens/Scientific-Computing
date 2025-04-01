@@ -12,7 +12,7 @@ $$
 	I = \frac{e^\frac{\pi}{2}-1}{2}
 $$
 
-The code can be found on GitHub.
+The code can be found on [GitHub](https://github.com/ksimoens/Scientific-Computing/tree/master/Task004_integration).
 
 ## Integration in C++
 
