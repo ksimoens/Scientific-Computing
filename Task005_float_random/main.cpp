@@ -11,7 +11,7 @@ int main(int argc, char *argv[]){
 
 	// ****** SUM ******
 	// perform the sum via for loop
-	double loop_sum = loopSum();
+	double loop_sum = loopSum(0);
 	printf("the result of the sum with for loop is %.16f\n",loop_sum);
 	// perform the sum via GSL vector sum
 	double gsl_sum = gslSum();
@@ -19,6 +19,9 @@ int main(int argc, char *argv[]){
 	// perform the sum via the Kahan algorithm
 	double kahan_sum = kahanSum();
 	printf("the result of the sum with Kahan algorithm is %.16f\n",kahan_sum);
+	// perform the sum via for loop but switch order of elements
+	loop_sum = loopSum(1);
+	printf("the result of the sum with for loop but different order is %.16f\n",loop_sum);
 
 	// ****** RANDOM NUMBER ******
 	// read the parameters

@@ -11,7 +11,7 @@
 #include "globParams.h"
 
 // defined in "floatSum.cpp"
-double loopSum();
+double loopSum(int order);
 double gslSum();
 double kahanSum();
 

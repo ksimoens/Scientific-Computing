@@ -1,14 +1,21 @@
 #include "floatSum.h"
 
 // calculate the sum with a for loop
-double loopSum(){
+double loopSum(int order){
 
 	// declare the array
-	double vec[4]; 
-	vec[0] = 1.0; 
-	vec[1] = 1e-16;
-	vec[2] = -1e-16;
-	vec[3] = -0.5;
+	double vec[4];
+	if(order == 0){
+		vec[0] = 1.0; 
+		vec[1] = 1e-16;
+		vec[2] = -1e-16;
+		vec[3] = -0.5;
+	} else{
+		vec[0] = 1e-16; 
+		vec[1] = -1e-16;
+		vec[2] = 1.0;
+		vec[3] = -0.5;
+	}
 
 	// initialise the sum
 	double sum = 0.0;
