@@ -10,7 +10,8 @@ Secondly, the FFT of this matrix is calculated in two ways: once by using the co
 Thirdly, from both FFTs, the original matrix is recalculated by using the respective inverse FFT. The mean and median absolute and relative differences with the original matrix are calculated.  
 Lastly, the output from the rFFT is used to calculate the output from the cFFT.  
   
-To run the script, execute the bash file `$ ./run_calculation.sh`, in which you can change the size of the matrix **N**.
+To run the script, execute the bash file `$ ./run_calculation.sh`, in which you can change the size of the matrix **N**.  
+The code can be found on [GitHub](https://github.com/ksimoens/Scientific-Computing/tree/master/Task006_FFT).
 
 ## Machine precision
 
