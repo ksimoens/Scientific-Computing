@@ -28,4 +28,4 @@ ERROR: LoadError: There was an error during testing
 While I have never performed rigourous UT, I always test individual functions when I implement them. That being said, even if all functions do what they are meant to do individually, then still the whole programme can show unintended behaviour or the whole is not equal to the sum of the parts.  
   
 To run both the C++ and the Julia programme, execute the bash script ``$ ./run_tests.sh``. Change the parameters in the *config* file as desired.  
-All the code is available on [GitHub]().
+All the code is available on [GitHub](https://github.com/ksimoens/Scientific-Computing/tree/master/Task007_unit_test).
