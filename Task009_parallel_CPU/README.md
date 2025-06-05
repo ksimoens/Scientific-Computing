@@ -4,7 +4,7 @@ The programme can be executed by running the `$ ./run.sh` executable. This bash 
 You can change the parameters in the **config** file as desired. These parameters include the number of parallel processes/threads to be used. The script is adjusted to a laptop with 4 logical but 2 physical cores and may have to be adjusted to your own specifications.  
 Additionally, the length of the vector *N* has to be divisible over the number of cores *c*. The script has not been tested otherwise and may not work properly.  
   
-The full code can be found on [GitHub]().
+The full code can be found on [GitHub](https://github.com/ksimoens/Scientific-Computing/tree/master/Task009_parallel_CPU).
 
 ## Message Passing Interface (MPI)
 
