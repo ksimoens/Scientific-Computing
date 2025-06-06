@@ -2,7 +2,7 @@
 
 I have to be honest here; I am a bit disappointed about this part. It was my intention to play around with GPU parallel programming, but the exercise turned into a lot of frustration while attempting to simply have access to a working GPU. These attempts have been in vain. This report therefore contains the narrative of failed attempts.   
   
-The full code of the implementation of the daxpy vector sum on the GPU can be found on [GitHub]().
+The full code of the implementation of the daxpy vector sum on the GPU can be found on [GitHub](https://github.com/ksimoens/Scientific-Computing/tree/master/Task010_parallel_GPU).
 
 ## CUDA
 
