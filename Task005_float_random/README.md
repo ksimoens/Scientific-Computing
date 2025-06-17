@@ -23,6 +23,10 @@ The C++ programme uses standard libraries and the **HDF5** and **GSL_vector** li
 
 The **plot.R** script plots the distribution of the vector values and stores the figure in a PNG file.  
 The variance of the sum of two Gaussian variables is equal to the sum of the variances of the variables and should here be 2.0. Both the distributions and the variances are in agreement with expectations.    
+
+<p align="center">
+<img src="output_N100000.png" alt="image" width="500"/>
+</p>
   
 The used R libraries are **tidyverse** for plotting and **rhdf5** for reading the HDF5 files.
 

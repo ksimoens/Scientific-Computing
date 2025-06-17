@@ -51,17 +51,17 @@ The container should now be visible in the Docker containers:
 ```
 $ docker ps -a
 ```  
-3. Check the AlmaLinux 9 installation:  
-Inside the bash terminal of the container use:  
-```
-$ cat /etc/os-release
-```  
 to list the available containers, which should return:  
 ```
 NAME="AlmaLinux"    
 VERSION="9.5 (Teal Serval)"  
 ...
-```  
+``` 
+3. Check the AlmaLinux 9 installation:  
+Inside the bash terminal of the container use:  
+```
+$ cat /etc/os-release
+```   
   
 Based on the [Manual](https://alicedoimo.github.io/docker-almalinux-guide/) by Alice Doimo.
 
@@ -126,7 +126,7 @@ For further information, check out the `Julia` [documentation](https://docs.juli
 
 ## Compile C++ in AlmaLinux 9
 
-If necessary first install the `sudo` command through:  
+If necessary, first install the `sudo` command through:  
 ```
 $ dnf install sudo
 ```  

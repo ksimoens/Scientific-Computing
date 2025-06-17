@@ -9,7 +9,7 @@ On Ubuntu, first install the following tools:
 $ sudo apt-get install libhdf5-dev hdf5-tools
 ```  
 
-Next locate the the `hdf5.h` file in your file system:  
+Next locate the `hdf5.h` file in your file system:  
 
 ```
 $ find /usr -iname "*hdf5.h*"

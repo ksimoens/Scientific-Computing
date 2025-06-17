@@ -28,11 +28,16 @@ The C++ programme uses standard libraries and the **HDF5** and **GSL_integration
 The same Trapezoid rule is used to numerically integrate the integral in Julia by the **integrate.jl** script. The script reads the necessary parameters from the **config** file and performs the integration for each number of integration points *N* already in the **summary.csv** file from the C++ calculation.  
 The Julia results are added to the CSV file.  
   
-The Julia script load the **DataFrames** and **CSV** libraries.
+The Julia script loads the **DataFrames** and **CSV** libraries.
 
 ## Plotting in R
 
-The **plot.R** script makes some summary plots and stores them in **summary_plots.pdf**.  
+The **plot.R** script makes some summary plots and stores them in **summary_plots.pdf**. 
+
+<p align="center">
+<img src="summary_plots.png" alt="image" width="500"/>
+</p>
+
 The top-left plot shows the function realisations for the lowest and highest number of integration points in **summary.csv**.  
 The top-right plot shows the absolute difference between the integration in C++ and the one in Julia in function of the number of integration points. This linear dependence is puzzling.  
 The bottom-left plot shows the relative error of the C++ integration in function of the number of integration points. The error decreases quadratically with the number of points until it hits machine precision.  
@@ -43,5 +48,5 @@ The used R libraries are **tidyverse** and **ggpubr** for plotting and **rhdf5**
 ## Run the full programme
 
 To run a full programme, execute the **run.sh** script.  
-This script will first run the C++ programme for *N* values from $2^3$ until $2^24$ in logarithmic jumps of 2 (22 points). Then the script will run the Julia programme doing the integration for the same *N* values. Finally, the plots are made in R.  
+This script will first run the C++ programme for *N* values from $2^3$ until $2^{24}$ in logarithmic jumps of 2 (22 points). Then the script will run the Julia programme doing the integration for the same *N* values. Finally, the plots are made in R.  
 The different programmes are timed. The C++ and Julia programme take about the same time of nine seconds, while the plotting takes around a minute and a half. In total, the script takes around two minutes to run. Note that the R plotting can take quite a bit of RAM memory to load the HDF5 vectors. Additionally, the script generates around 500 MB of HDF5 files.
